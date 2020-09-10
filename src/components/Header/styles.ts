@@ -22,13 +22,17 @@ export const Container = styled.div<ContainerProps>`
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
+        border-bottom: 0;
 
         & + a {
           margin-left: 32px;
         }
 
-        &:hover {
+        &:hover,
+        &:active {
           opacity: 0.6;
+          margin-bottom: 10px;
+          border-bottom: 2px solid #ff872c;
         }
       }
     }
